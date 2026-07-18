@@ -14,7 +14,7 @@ const AddStudent=()=>{
   function handleForm(e){
     e.preventDefault()
     const data={name,email,mobile,department,course}
-    axios.post(`https:/6a5bebeb64f700df5bd79d01.mockapi.io/users`, data)
+    axios.post(`https://6a5bebeb64f700df5bd79d01.mockapi.io/users`, data)
     .then(()=>{
       toast.success("Student Added..!")
       setName("")

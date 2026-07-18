@@ -9,7 +9,7 @@ const ViewStudent=()=>{
   const[students,setStudents]=useState([])
   const navigate=useNavigate()
   function fetchData(){
-    axios.get("http://localhost:3000/users")
+    axios.get("https://6a5bebeb64f700df5bd79d01.mockapi.io/users")
     .then(x=>setStudents(x.data))
     .catch(err=>console.log(err))
   }
@@ -22,7 +22,7 @@ const ViewStudent=()=>{
   }
 
   function handleDelete(id){
-    axios.delete(`http://localhost:3000/users/${id}`)
+    axios.delete(`axios.get("https://6a5bebeb64f700df5bd79d01.mockapi.io/users")/${id}`)
     .then(()=>{alert("Student Deleted")
     fetchData()
     })

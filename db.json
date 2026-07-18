@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "name": "Saniya",
+      "email": "saniya@gamil.com",
+      "mobile": "1234567893",
+      "department": "CSE",
+      "course": "JFS",
+      "id": "TcSd_JeukcY"
+    },
+    {
+      "name": "Kazmi",
+      "email": "kazmi@gmail.com",
+      "mobile": "457896321",
+      "department": "CS",
+      "course": "JFS",
+      "id": "PATTT6ka-kM"
+    },
+    {
+      "name": "Rabiya Ahmedi",
+      "email": "ruby@gmail.com",
+      "mobile": "123456789",
+      "department": "AI/ML",
+      "course": "Data Analyst",
+      "id": "755hqf_p4FE"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

@@ -16,7 +16,6 @@ const UpdateStudent=()=>{
       
         useEffect(()=>{
             axios.get(`https://6a5bebeb64f700df5bd79d01.mockapi.io/users/${id}`)
-            axios.get(`http://localhost:3000/users/${id}`)
             .then(x=>{
                 setName(x.data.name)
                 setEmail(x.data.email)
@@ -30,7 +29,6 @@ const UpdateStudent=()=>{
             e.preventDefault()
             const newData={name,email,mobile,department,course}
             axios.put(`https://6a5bebeb64f700df5bd79d01.mockapi.io/users/${id}`,newData)
-            // axios.put(`http://localhost:3000/users/${id}`,newData)
             .then(()=>{
                 toast.success("Updated...")
                 navigate("/viewstudent")
